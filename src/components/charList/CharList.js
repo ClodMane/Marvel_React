@@ -20,7 +20,6 @@ const CharList = (props) => {
     }, [])
 
     const onRequest = (offset, initial) => {
-        console.log(initial);
         initial ? setNewItemLoading(false) : setNewItemLoading(true);
         getAllCharacters(offset)
             .then(onCharListLoaded)
